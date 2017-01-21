@@ -1,0 +1,37 @@
+page-home {
+.searchbar-md .searchbar-input {
+    border-radius: 20px;
+}
+
+.card-md {
+    border-radius: 20px;
+}
+
+.food-card {
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+}
+
+.card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+.smalltext {
+    text-align:right;
+    padding: 0px 20px;
+}
+
+ion-grid {
+    padding: 0px;
+}
+ion-col {
+    padding: 0px;
+}
+}
