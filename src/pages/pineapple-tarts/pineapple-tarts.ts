@@ -35,4 +35,5 @@ export class PineappleTartsPage {
     this.navCtrl.push(PineappleRecipePage);
   }
 
+
 }

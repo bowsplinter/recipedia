@@ -24,10 +24,12 @@ ion-content{
 .search{
     width:95%;
     margin:auto;
+    margin-top: -20px;
+    margin-bottom: 20px;    
 }
 
 .Nav{
-    font-family: 'Bebas Neue';
+    font-family: 'Futura', Arial, sans-serif;
     font-weight: 700;
     color: #670C07;
     font-size: 30px;
@@ -86,5 +88,21 @@ ion-col {
 .DDL2{
     margin-bottom:20px;
     margin-top: 15px;
+}
+
+.button1{
+    font-family: 'Futura', Arial, sans-serif;
+    font-weight: 700;
+    color: #670C07;
+    font-size: 22px;
+    width: 95%;
+    margin-left: 5px;
+    text-align: center;
+    background-color: #e7e7e7; 
+    color: black;
+}
+
+#GV2{
+    display:none;
 }
 }
