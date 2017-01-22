@@ -28,7 +28,8 @@ export class HomePage {
   }
 presentAlert() {
   let alert = this.alertCtrl.create({
-    title: 'Your preferences has been recorded and adjusted accordingly',
+    title: 'Thank you!',
+    subTitle: 'We are mastering taste together (:'
   });
   alert.present();
 }
