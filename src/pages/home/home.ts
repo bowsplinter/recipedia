@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 
 import { PineappleTartsPage } from '../pineapple-tarts/pineapple-tarts';
 
@@ -11,8 +11,14 @@ import { PineappleTartsPage } from '../pineapple-tarts/pineapple-tarts';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public alertCtrl: AlertController) {
+      let alert = navParams.get('alert');
+      if (alert == true) {
+          console.log('yes');
+          this.presentAlert();
+      }
   }
 
   goTo(number) {
@@ -20,4 +26,10 @@ export class HomePage {
           this.navCtrl.push(PineappleTartsPage);
       }
   }
+presentAlert() {
+  let alert = this.alertCtrl.create({
+    title: 'Your preferences has been recorded and adjusted accordingly',
+  });
+  alert.present();
+}
 }

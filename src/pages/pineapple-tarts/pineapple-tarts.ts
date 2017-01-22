@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, } from 'ionic-angular';
 
 import { PineappleRecipePage } from '../pineapple-recipe/pineapple-recipe';
+
+import { NativeStorage } from 'ionic-native';
 
 /*
   Generated class for the PineappleTarts page.
@@ -60,7 +62,7 @@ export class PineappleTartsPage {
     this.sugar = this.sugarA[this.index];
     this.temperature = this.temperatureA[this.index];
     this.cooktime = this.cooktimeA[this.index];
-  }
+    }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PineappleTartsPage');

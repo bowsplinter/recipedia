@@ -24,7 +24,7 @@ export class PineappleRecipePage {
   }
 
   click() {
-  	this.navCtrl.push(HomePage);
+  	this.navCtrl.push(HomePage, {alert: true});
   }
 
 }
