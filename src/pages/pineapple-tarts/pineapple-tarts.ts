@@ -67,6 +67,24 @@ export class PineappleTartsPage {
 
   }
 
+  image() {
+    switch(this.index) {
+      case 0:
+        return "assets/img/0.jpeg";
+      case 1:
+        return "assets/img/1.jpeg";
+      case 2:
+        return"assets/img/2.jpeg";
+      case 3:
+        return "assets/img/3.jpeg";
+      case 4:
+        return "assets/img/4.jpeg";
+      case 5:
+        return"assets/img/5.jpeg";
+
+    }
+  }
+
   butterless() {
     if (this.butterA[this.index] < this.butterA[this.compareindex]) {
       return true;
