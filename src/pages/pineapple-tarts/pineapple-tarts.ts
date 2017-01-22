@@ -70,17 +70,17 @@ export class PineappleTartsPage {
   image() {
     switch(this.index) {
       case 0:
-        return "assets/img/0.jpeg";
+        return "assets/img/0.png";
       case 1:
-        return "assets/img/1.jpeg";
+        return "assets/img/1.png";
       case 2:
-        return"assets/img/2.jpeg";
+        return"assets/img/2.png";
       case 3:
-        return "assets/img/3.jpeg";
+        return "assets/img/3.png";
       case 4:
-        return "assets/img/4.jpeg";
+        return "assets/img/4.png";
       case 5:
-        return"assets/img/5.jpeg";
+        return"assets/img/5.png";
 
     }
   }

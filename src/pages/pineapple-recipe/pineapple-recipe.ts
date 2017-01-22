@@ -16,6 +16,7 @@ import { HomePage } from '../home/home';
 })
 export class PineappleRecipePage {
 
+  first: number = 50;
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
