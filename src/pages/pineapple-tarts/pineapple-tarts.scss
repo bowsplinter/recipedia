@@ -1,4 +1,7 @@
 page-pineapple-tarts {
+.ion-label {
+    font-size: 20px;
+}
 .range-md {
     padding: 0px 20px;
 
@@ -26,7 +29,7 @@ page-pineapple-tarts {
         background: #990000;
     }
     .range-knob {
-        background: #000000;
+        background: #fff;
     }
 }
 
@@ -35,3 +38,12 @@ page-pineapple-tarts {
       background: transparent;
     }
   }
+
+  .button-md {
+    background-color: #f57138;
+  }
+
+  .content-md {
+    color: #fff;
+  }
+
