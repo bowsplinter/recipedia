@@ -25,7 +25,7 @@ ion-content{
     width:95%;
     margin:auto;
     margin-top: 20px;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 
 .Nav{
@@ -99,7 +99,7 @@ ion-col {
     width: 95%;
     margin-left: 5px;
     text-align: center;
-    background-color: #e7e7e7; 
+    background-color: #e7e7e7;
     color: black;
     border-radius: 10px;
 }
@@ -107,4 +107,10 @@ ion-col {
 #GV2{
     display:none;
 }
+
+}
+
+.alert-md .alert-wrapper {
+    background-color: #ff9966;
+    color: #600000;
 }
