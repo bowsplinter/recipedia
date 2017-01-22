@@ -14,15 +14,15 @@
 
 
 <ion-content padding>
-    <ion-range [(ngModel)]="first">
+    <ion-range (ionChange)="change();" max="10" [(ngModel)]="first">
         <ion-label range-left>Crunchy</ion-label>
         <ion-label range-right>Melty</ion-label>
     </ion-range>
-    <ion-range [(ngModel)]="second">
+    <ion-range (ionChange)="change();" max="10" [(ngModel)]="second">
         <ion-label range-left>Firm</ion-label>
         <ion-label range-right>Soft</ion-label>
     </ion-range>
-    <ion-range [(ngModel)]="third">
+    <ion-range (ionChange)="change();" max="10" [(ngModel)]="third">
         <ion-label range-left>Tangy</ion-label>
         <ion-label range-right>Mild</ion-label>
     </ion-range>
@@ -55,7 +55,7 @@
     </ion-row>
     <ion-row>
         <ion-col width-50>
-        <h4 style="padding-left:20px">Cloves (g)</h4>
+        <h4 style="padding-left:20px">Cloves</h4>
         </ion-col>
         <ion-col width-50>
         <h6 class="cloves" style="text-align:center">{{cloves}}</h6>
