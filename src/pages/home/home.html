@@ -4,135 +4,127 @@
     <img src="../assets/img/iconn.png" style="width:250px; height:230px;" alt="recipedia">
 </p>
 <ion-searchbar class="search"></ion-searchbar>
-  <h3 class="Nav" style = "text-align:center;">Categories</h3>
-  <ion-card class="DDL1">
-<ion-item class="category itemone" (click)="showBreakfast = !showBreakfast">
-  Breakfast
-  <ion-icon name="ios-arrow-down" item-right></ion-icon>
-</ion-item>
-
-    <p class="smalltext" *ngIf="!showBreakfast">Start your day right</p>
-
-  <ion-list *ngIf="showBreakfast">
-    <button ion-item (click)="goTo(0)">
-      <ion-icon name="contact" item-left></ion-icon>
-      Scrambled Eggs
-    </button>
-
-    <button ion-item (click)="goTo(1)">
-      <ion-icon name="time" item-left></ion-icon>
-      French Toast
-    </button>
-
-    <button ion-item (click)="goTo(2)">
-      <ion-icon name="cash" item-left></ion-icon>
-      Omelete
-    </button>
-  </ion-list>
-</ion-card>
-
-<ion-card class="DDL2">
-<ion-item class="category itemone" (click)="showAsian = !showAsian">
-  Asian Cuisine
-  <ion-icon name="ios-arrow-down" item-right></ion-icon>
-</ion-item>
-
-    <p class="smalltext" *ngIf="!showAsian">Get your wok ready</p>
-
-  <ion-list *ngIf="showAsian">
-    <button ion-item (click)="goTo(3)">
-      <ion-icon name="contact" item-left></ion-icon>
-      Chicken Rice
-    </button>
-
-    <button ion-item (click)="goTo(4)">
-      <ion-icon name="time" item-left></ion-icon>
-      Food 2
-    </button>
-
-    <button ion-item (click)="goTo(5)">
-      <ion-icon name="cash" item-left></ion-icon>
-      food 3
-    </button>
-  </ion-list>
-</ion-card>
-
-
-<h3 class="Nav" style = "text-align:center;">Popular</h3>
     <ion-grid>
         <ion-row>
-            <ion-col width-50>
+          <ion-col width-50>
+            <button ion-button class="button1" ID="Category">Categories</button>
+          </ion-col>
+          <ion-col width-50>
+          <button ion-button class="button1" ID="Popular">Popular</button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid ID="GV1">
+        <ion-row>
+            <ion-col>
                 <ion-card class = "food-card" (click)="goTo(6)">
-                    <img src="http://placehold.it/350x300"/>
+                    <img src="http://placehold.it/400x175"/>
                     <div class="card-title">Cookie</div>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
-                    <div class="card-title">Pasta</div>
                 </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col width-50>
+            <ion-col>
                 <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
+                    <img src="http://placehold.it/400x175"/>
                     <div class="card-title">Cookie</div>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
-                    <div class="card-title">Pasta</div>
                 </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col width-50>
+            <ion-col>
                 <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
+                    <img src="http://placehold.it/400x175"/>
                     <div class="card-title">Cookie</div>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
-                    <div class="card-title">Pasta</div>
                 </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col width-50>
+            <ion-col>
                 <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
+                    <img src="http://placehold.it/400x175"/>
                     <div class="card-title">Cookie</div>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
-                    <div class="card-title">Pasta</div>
                 </ion-card>
             </ion-col>
         </ion-row>
 
         <ion-row>
-            <ion-col width-50>
+            <ion-col>
                 <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
+                    <img src="http://placehold.it/400x175"/>
                     <div class="card-title">Cookie</div>
-                </ion-card>
-            </ion-col>
-            <ion-col width-50>
-                <ion-card class = "food-card">
-                    <img src="http://placehold.it/350x300"/>
-                    <div class="card-title">Pasta</div>
                 </ion-card>
             </ion-col>
         </ion-row>
     </ion-grid>
+
+     <ion-grid ID="GV2">
+        <ion-row>
+            <ion-col>
+                <ion-card class = "food-card" (click)="goTo(6)">
+                    <img src="http://placehold.it/400x175"/>
+                    <div class="card-title">Cookie</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card class = "food-card">
+                    <img src="http://placehold.it/400x175"/>
+                    <div class="card-title">Cookie</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card class = "food-card">
+                    <img src="http://placehold.it/400x175"/>
+                    <div class="card-title">Cookie</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card class = "food-card">
+                    <img src="http://placehold.it/400x175"/>
+                    <div class="card-title">Cookie</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-card class = "food-card">
+                    <img src="http://placehold.it/400x175"/>
+                    <div class="card-title">Cookie</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    /*
+    $(document).ready(function(){
+      $("#Category").click(function (){
+        $("#GV2").hide(500);
+        $("#GV1").fadeToggle();
+      });
+    });
+    */
+    $(document).ready(function(){
+      $("#Popular").click(function (){
+        $("#GV2").fadeToggle();
+      });
+    });
+    </script>
+
 </ion-content>
+
+    
