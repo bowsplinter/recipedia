@@ -67,6 +67,125 @@ export class PineappleTartsPage {
 
   }
 
+  butterless() {
+    if (this.butterA[this.index] < this.butterA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  buttermore() {
+    if (this.butterA[this.index] > this.butterA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  plainless() {
+    if (this.plainflourA[this.index] < this.plainflourA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  plainmore() {
+    if (this.plainflourA[this.index] > this.plainflourA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  pineless() {
+    if (this.pineapplesA[this.index] < this.pineapplesA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  pinemore() {
+    if (this.pineapplesA[this.index] > this.pineapplesA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  cloveless() {
+    if (this.clovesA[this.index] < this.clovesA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  clovemore() {
+    if (this.clovesA[this.index] > this.clovesA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  sugarless() {
+    if (this.sugarA[this.index] < this.sugarA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  sugarmore() {
+    if (this.sugarA[this.index] > this.sugarA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  templess() {
+    if (this.temperatureA[this.index] < this.temperatureA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  tempmore() {
+    if (this.temperatureA[this.index] > this.temperatureA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  cookless() {
+    if (this.cooktimeA[this.index] < this.cooktimeA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+  cookmore() {
+    if (this.cooktimeA[this.index] > this.cooktimeA[this.compareindex]) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
   make() {
     this.navCtrl.push(PineappleRecipePage);
   }

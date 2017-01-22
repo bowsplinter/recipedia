@@ -28,13 +28,15 @@
     </ion-range>
     <p style="text-align:center"><img src="http://placehold.it/150x150"></p>
 
-    <ion-grid>
+    <ion-grid class="ingredients">
     <ion-row>
         <ion-col width-50>
         <h4 style="padding-left:20px">Butter (g)</h4>
         </ion-col>
         <ion-col width-50>
-        <h6 class="butter" style="text-align:center">{{butter}}</h6>
+        <div [ngClass]="{'red':butterless(), 'green':buttermore()}">
+        <h6 class="butter" style="text-align:center;">{{butter}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -42,7 +44,9 @@
         <h4 style="padding-left:20px">Plain Flour (g)</h4>
         </ion-col>
         <ion-col width-50>
+        <div [ngClass]="{'red':plainless(), 'green':plainmore()}">
         <h6 class="plainflour" style="text-align:center">{{plainflour}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -50,7 +54,9 @@
         <h4 style="padding-left:20px">Pineapples (kg)</h4>
         </ion-col>
         <ion-col width-50>
+        <div [ngClass]="{'red':pineless(), 'green':pinemore()}">
         <h6 class="pineapples" style="text-align:center">{{pineapples}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -58,7 +64,9 @@
         <h4 style="padding-left:20px">Cloves</h4>
         </ion-col>
         <ion-col width-50>
+        <div [ngClass]="{'red':cloveless(), 'green':clovemore()}">
         <h6 class="cloves" style="text-align:center">{{cloves}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -66,7 +74,9 @@
         <h4 style="padding-left:20px">Sugar (g)</h4>
         </ion-col>
         <ion-col width-50>
+        <div [ngClass]="{'red':sugarless(), 'green':sugarmore()}">
         <h6 class="sugar" style="text-align:center">{{sugar}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -74,7 +84,9 @@
       <h4 style="padding-left:20px">Temperature (°C)</h4>
       </ion-col>
       <ion-col width-50>
+        <div [ngClass]="{'red':templess(), 'green':tempmore()}">
         <h6 class="temperature" style="text-align:center">{{temperature}}</h6>
+        </div>
         </ion-col>
     </ion-row>
     <ion-row>
@@ -82,7 +94,10 @@
         <h4 style="padding-left:20px">Time (s)</h4>
         </ion-col>
         <ion-col width-50>
+        <div [ngClass]="{'red':cookless(), 'green':cookmore()}">
+
         <h6 class="cooktime" style="text-align:center">{{cooktime}}</h6>
+        </div>
         </ion-col>
     </ion-row>
 
