@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { HomePage } from '../home/home';
+
+
 /*
   Generated class for the PineappleRecipe page.
 
@@ -17,6 +20,10 @@ export class PineappleRecipePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PineappleRecipePage');
+  }
+
+  click() {
+  	this.navCtrl.push(HomePage);
   }
 
 }
